@@ -18,4 +18,4 @@ console.log('*********************');
 //   }, Number.MAX_VALUE);
 // }
 
-console.log(min_one(1, 2, 4));
+// console.log(min_one(1, 2, 4));
