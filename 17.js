@@ -15,10 +15,10 @@ function addb(a, b) {
 }
 
 function acc(func, a) {
-  return function(...nums) {
+  return function (...nums) {
     return func(...nums) + a;
   };
 }
 
 let add = acc(addb, 0);
-console.log(add(1, 2, 4)); // 7
+acc(1, 2, 4); // 7
