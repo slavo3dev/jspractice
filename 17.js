@@ -15,10 +15,22 @@ function addb(a, b) {
 }
 
 function acc(func, a) {
-  return function (...nums) {
+  return function(...nums) {
     return func(...nums) + a;
   };
 }
 
 let add = acc(addb, 0);
-acc(1, 2, 4); // 7
+console.log(acc(1, 2, 4)); // 7
+
+console.log('==================');
+
+function acc_one(func, initial) {
+  return function(...args) {
+    return args.reduce((result, curr, idx) => {
+      return func(result, curr, idx);
+    }, initial);
+  };
+}
+
+console.log(acc(1, 2, 3));
