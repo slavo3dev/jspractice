@@ -14,7 +14,7 @@ function likes(names) {
     return `${names[0]} and ${names[1]}, ${names[2]} like this`;
   }
 
-  for (var i = 3; i < names.length; i++) {
+  for (var i = 2; i < names.length; i++) {
     count++;
   }
 
@@ -26,3 +26,4 @@ console.log(likes(["Peter"])); // must be "Peter likes this"
 console.log(likes(["Jacob", "Alex"])); // must be "Jacob and Alex like this"
 console.log(likes(["Max", "John", "Mark"])); // must be "Max, John and Mark like this"
 console.log(likes(["Alex", "Jacob", "Mark", "Max"])); // must be "Alex, Jacob and 2 others like this"
+console.log(likes(["Alex", "Jacob", "Mark", "Max", "Slavko", "Nemanja"])); // must be "Alex, Jacob and 4 others like this"
