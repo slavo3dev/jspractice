@@ -1,3 +1,4 @@
 let t = ["s", "l", "a", "v"];
+let name = "slavo";
 
-console.log(t.slice(1));
+for (var i = 0; i < t.length; i++) {}
