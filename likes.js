@@ -14,7 +14,7 @@ function likes(names) {
     return `${names[0]} and ${names[1]}, ${names[2]} like this`;
   }
 
-  for (var i = 3; i < list.length; i++) {
+  for (var i = 3; i < names.length; i++) {
     count++;
   }
 
