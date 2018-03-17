@@ -4,9 +4,10 @@ let l = [];
 var j = 0;
 for (var i = 0; i < t.length; i++) {
   for (j = 1; j < t.length; j++) {
-    console.log(t[i]);
     console.log(t[j]);
+    console.log(t[i]);
+    console.log("Inside");
     console.log("----------");
   }
-  j++;
+  console.log("Outside");
 }
