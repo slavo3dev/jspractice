@@ -13,6 +13,12 @@ function likes(names) {
   } else if (names.length === 3) {
     return `${names[0]} and ${names[1]}, ${names[2]} like this`;
   }
+
+  for (var i = 3; i < list.length; i++) {
+    count++;
+  }
+
+  return `${names[0]} and ${names[1]} and ${count} like this`;
 }
 
 console.log(likes([])); // must be "no one likes this"
