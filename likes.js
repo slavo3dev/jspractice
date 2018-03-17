@@ -5,7 +5,7 @@
 function likes(names) {
   var count = 0;
   if (names.length === 0) {
-    return "no one likes me";
+    return "no one likes this";
   } else if (names.length === 1) {
     return `${names[0]} likes this`;
   } else if (names.length === 2) {
@@ -18,7 +18,7 @@ function likes(names) {
     count++;
   }
 
-  return `${names[0]} and ${names[1]} and ${count} like this`;
+  return `${names[0]}, ${names[1]} and ${count} others like this`;
 }
 
 console.log(likes([])); // must be "no one likes this"
