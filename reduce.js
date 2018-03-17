@@ -6,3 +6,8 @@ let new_arr = names.reduce((word, words) => word + " and " + words);
 
 console.log(new_string);
 console.log(new_arr);
+
+let nick = ["Pop", "Sima", "Pera"];
+
+let n = nick.reduce((a, b) => a + " and " + b + "," + c);
+console.log(n);
