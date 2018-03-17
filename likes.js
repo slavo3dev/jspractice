@@ -6,6 +6,10 @@ function likes(names) {
   // TODO
   if (names.length === 0) {
     return "no one likes me";
+  } else if (names.length === 1) {
+    return `${names[0]} likes this!`;
+  } else if (names.length === 2) {
+    return `${names.reduce((a, b) => a + " and " + b)} like this`;
   }
 
   return true;
