@@ -14,3 +14,7 @@ for (var i = 0; i < l.length; i++) {
 }
 
 console.log(a);
+
+for (var i = 0; i < a.length; i++) {
+  console.log(a[i].test(t));
+}
