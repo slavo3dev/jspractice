@@ -23,4 +23,5 @@ function isIsogram_advance(str) {
 
 console.log(isIsogram("Dermatoglyphics")); // true
 console.log(isIsogram("aba")); // false
+console.log('-------------------------------')
 console.log(isIsogram_advance("moOse")); // false // -- ignore letter case
