@@ -2,8 +2,15 @@
 
 let word = "e";
 let t = "Pera";
-let a = new RegExp(word);
+let f = new RegExp(word);
 let l = t.split("");
+let a = [];
 
 console.log(a);
-console.log(a.test(t));
+console.log(f.test(t));
+
+for (var i = 0; i < l.length; i++) {
+  a.push(RegExp(t[i]));
+}
+
+console.log(a);
