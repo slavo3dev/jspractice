@@ -16,6 +16,11 @@ function isIsogram(str) {
   return true;
 }
 
+// advance solution
+function isIsogram_advance(str) {
+  return !/(\w).*\1/i.test(str)
+}
+
 console.log(isIsogram("Dermatoglyphics")); // true
 console.log(isIsogram("aba")); // false
-console.log(isIsogram("moOse")); // false // -- ignore letter case
+console.log(isIsogram_advance("moOse")); // false // -- ignore letter case
