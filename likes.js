@@ -4,6 +4,11 @@
 
 function likes(names) {
   // TODO
+  if (names.length < 0) {
+    return "no one likes me";
+  }
+
+  return true;
 }
 
 likes([]); // must be "no one likes this"
