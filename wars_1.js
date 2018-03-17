@@ -4,16 +4,18 @@ function isIsogram(str) {
   var t = str.split("");
   for (var i = 0; i < t.length; i++) {
     for (j = 1 + i; j < t.length; j++) {
-      console.log(t[i]);
-      console.log(t[j]);
-      console.log("Inside");
-      console.log("----------");
+      if (t[j].toLowerCase() === t[i].toLowerCase()) {
+        return false;
+        break;
+      }
     }
-    console.log("Outside");
-    console.log("------ The End ---------");
+    // return true;
+    // console.log("Outside");
+    // console.log("------ The End ---------");
   }
+  return true;
 }
 
-isIsogram("Dermatoglyphics"); // true
-isIsogram("aba"); // false
-isIsogram("moOse"); // false // -- ignore letter case
+console.log(isIsogram("Dermatoglyphics")); // true
+console.log(isIsogram("aba")); // false
+console.log(isIsogram("moOse")); // false // -- ignore letter case
