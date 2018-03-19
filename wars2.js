@@ -9,7 +9,7 @@ function mxdiflg(a1, a2) {
     return -1;
   }
 
-  return "If statement is working!!!";
+  return a1.length + a2.length;
 }
 
 s1 = [
