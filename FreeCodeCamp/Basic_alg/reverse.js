@@ -6,8 +6,8 @@
 
 function reverseString(str) {
   return str
-    .split(" ")
-    .revese()
+    .split("")
+    .reverse()
     .join("");
 }
 
