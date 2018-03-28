@@ -16,8 +16,11 @@ function palindrome(str) {
     .split(" ")
     .reverse()
     .join(" ");
-  return str_new === str.replace(/\w+/, "").toLowerCase();
+  console.log(str_new);
+  console.log(str.replace(" ", "").toLowerCase());
+  return str_new === str.replace(" ", "").toLowerCase();
 }
 
 palindrome("eye");
 console.log(palindrome("race car"));
+console.log(palindrome("My age is 0, 0 si ega ym."));

@@ -1,5 +1,6 @@
 var str = "race car";
-str.replace(/\w+/, "");
+console.log(`str: ${str}`);
+str = str.replace(" ", "");
 var str_new = str
   .toLowerCase()
   .replace(" ", "")
