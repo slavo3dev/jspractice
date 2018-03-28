@@ -11,4 +11,4 @@ function reverseString(str) {
     .join("");
 }
 
-reverseString("hello");
+console.log(reverseString("hello"));
