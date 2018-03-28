@@ -16,7 +16,7 @@ function palindrome(str) {
     .split(" ")
     .reverse()
     .join(" ");
-  return str_new === str.toLowerCase();
+  return str_new === str.replace(/\w+/, "").toLowerCase();
 }
 
 palindrome("eye");
