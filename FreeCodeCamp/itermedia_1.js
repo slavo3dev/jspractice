@@ -3,7 +3,11 @@
 // The lowest number will not always come first.
 
 function sumAll(arr) {
-  return 1;
+  let a = [];
+  for (let i = arr[0]; arr[0] <= arr[1]; i++) {
+    a.push(i);
+  }
+  return a.reduce((a, b) => a + b);
 }
 
-sumAll([1, 4]);
+console.log(sumAll([1, 4]));
