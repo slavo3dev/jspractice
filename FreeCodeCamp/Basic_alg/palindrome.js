@@ -11,10 +11,13 @@
 
 function palindrome(str) {
   var str_new = str
+    .toLowerCase()
+    .replace(" ", "")
     .split(" ")
     .reverse()
     .join(" ");
-  return str_new === str;
+  return str_new === str.toLowerCase();
 }
 
 palindrome("eye");
+console.log(palindrome("race car"));
