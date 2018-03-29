@@ -10,20 +10,19 @@
 // We'll also pass strings with special symbols, such as "2A3*3a2", "2A3 3a2", and "2_A3*3#A2".
 
 function palindrome(str) {
-  var str_new = str
+  var str_n = str
     .toLowerCase()
-    .replace("[, ;]", "")
-    .split(" ")
+    .replace(/[. ,]/g, "")
+    .split("")
     .reverse()
-    .join(" ");
-  console.log("========================");
-  console.log(str_new);
-  console.log(str.replace("[, ;]", "").toLowerCase());
-  console.log("========================");
-  return str_new === str.replace("[, ;]", "").toLowerCase();
+    .join("");
+  return str_n === str.replace(/[. ,]/g, "").toLowerCase();
 }
 
-palindrome("eye");
-console.log(palindrome("race car"));
-console.log(palindrome("My age is 0, 0 si ega ym."));
-console.log(palindrome("0_0 (: /- :) 0-0")); // should return true.
+console.log(palindrome("eye")); //true
+console.log(palindrome("_eye")); //true
+console.log(palindrome("race car")); // true
+console.log(palindrome("My age is 0, 0 si ega ym.")); // true
+console.log(palindrome("0_0 (: /- :) 0-0")); // true
+console.log(palindrome("not a palindrome")); // false
+console.log(palindrome("almostomla")); //false
