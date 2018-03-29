@@ -12,15 +12,18 @@
 function palindrome(str) {
   var str_new = str
     .toLowerCase()
-    .replace(" ", "")
+    .replace("[, ;]", "")
     .split(" ")
     .reverse()
     .join(" ");
+  console.log("========================");
   console.log(str_new);
-  console.log(str.replace(" ", "").toLowerCase());
+  console.log(str.replace("[, ;]", "").toLowerCase());
+  console.log("========================");
   return str_new === str.replace("[, ;]", "").toLowerCase();
 }
 
 palindrome("eye");
 console.log(palindrome("race car"));
 console.log(palindrome("My age is 0, 0 si ega ym."));
+console.log(palindrome("0_0 (: /- :) 0-0")); // should return true.
