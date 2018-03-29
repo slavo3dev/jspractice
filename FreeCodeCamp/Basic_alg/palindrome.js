@@ -18,7 +18,7 @@ function palindrome(str) {
     .join(" ");
   console.log(str_new);
   console.log(str.replace(" ", "").toLowerCase());
-  return str_new === str.replace(" ", "").toLowerCase();
+  return str_new === str.replace("[, ;]", "").toLowerCase();
 }
 
 palindrome("eye");
