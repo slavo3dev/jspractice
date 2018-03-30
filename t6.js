@@ -30,3 +30,5 @@ arr.forEach(function(word) {
 });
 
 console.log(Math.max(...copy));
+
+console.log("--------------------------");
