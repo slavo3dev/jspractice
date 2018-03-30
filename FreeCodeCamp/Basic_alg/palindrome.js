@@ -12,11 +12,11 @@
 function palindrome(str) {
   var str_n = str
     .toLowerCase()
-    .replace(/[. ,]/g, "")
+    .replace(/[_\W]+/g, "")
     .split("")
     .reverse()
     .join("");
-  return str_n === str.replace(/[. ,]/g, "").toLowerCase();
+  return str_n === str.replace(/[_\W]+/g, "").toLowerCase();
 }
 
 console.log(palindrome("eye")); //true
