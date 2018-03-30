@@ -3,8 +3,13 @@
 // Your response should be a number.
 
 function findLongestWord(str) {
-  let arr = str.split(" ");
-}
+  let copy = [];
+  str.split(' ').forEach(function(word) {
+  copy.push(word.length);
+});
+
+console.log(Math.max(...copy));
+
 
 findLongestWord("The quick brown fox jumped over the lazy dog");
 
