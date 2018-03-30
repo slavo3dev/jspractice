@@ -8,7 +8,7 @@ function titleCase(str) {
   str.split(" ").forEach(item => {
     str_new.push(item.charAt(0).toUpperCase() + item.slice(1).toLowerCase());
   });
-  return str_new.join();
+  return str_new.join(" ");
 }
 
 console.log(titleCase("I'm a little tea pot")); // should return a string.
