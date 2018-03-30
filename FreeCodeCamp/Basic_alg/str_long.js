@@ -4,12 +4,12 @@
 
 function findLongestWord(str) {
   let copy = [];
-  str.split(' ').forEach(function(word) {
-  copy.push(word.length);
-});
+  str.split(" ").forEach(function(word) {
+    copy.push(word.length);
+  });
 
-console.log(Math.max(...copy));
-
+  return Math.max(...copy);
+}
 
 findLongestWord("The quick brown fox jumped over the lazy dog");
 
