@@ -3,6 +3,7 @@
 // Remember, you can iterate through an array with a simple for loop, and access each member with array syntax arr[i].
 
 function largestOfFour(arr) {
+  let new_arr = [];
   return arr;
 }
 
