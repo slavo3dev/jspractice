@@ -4,7 +4,10 @@
 
 function largestOfFour(arr) {
   let new_arr = [];
-  return arr;
+  for (var i = 0; i < arr.length; i++) {
+    new_arr.push(Math.max(...arr[i]));
+  }
+  return new_arr;
 }
 
 console.log(
@@ -32,3 +35,8 @@ console.log(
     [1000000, 1001, 857, 1]
   ])
 ); // should return [9, 35, 97, 1000000].
+
+// advance code
+function largestOfFour(arr) {
+  return arr.map(Function.apply.bind(Math.max, null));
+}
