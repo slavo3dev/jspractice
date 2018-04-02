@@ -9,8 +9,12 @@ let arr_new = [];
 
 // console.log(arr.slice(0, 2));
 
-for (var i = 0; i < 3; i++) {
+for (var i = 0; i < 2; i++) {
   arr_new.push([]);
+  for (var j = 0; j < arr.length; j++) {
+    if (j < 2) {
+      arr_new[i].push(arr[j]);
+    }
+  }
 }
-
 console.log(arr_new);
