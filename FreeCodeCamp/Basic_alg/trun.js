@@ -7,10 +7,16 @@
 function truncateString(str, num) {
   let tree = "...";
 
-  if (str.length > num) {
+  if (num === 1) {
+    return str.slice(0, num) + tree;
+  } else if (num === 2) {
+    return str.slice(0, num) + tree;
+  } else if (str.length > num) {
     return str.slice(0, num - 3) + tree;
+  } else if (str.length <= num) {
+    return str.slice(0, num);
   }
-  return str.slice(0, num) + tree;
+  // return str.slice(0, num) + tree;
 }
 
 console.log(truncateString("A-tisket a-tasket A green and yellow basket", 11));
@@ -31,3 +37,10 @@ console.log(
 ); // should return "A-tisket a-tasket A green and yellow basket".
 console.log(truncateString("A-", 1)); // should return "A...".
 console.log(truncateString("Absolutely Longer", 2)); // should return "Ab...".
+
+// Advance Solution
+
+function truncateString(str, num) {
+  if (str.length > num) return str.slice(0, num > 3 ? num - 3 : num) + "...";
+  return str;
+}
