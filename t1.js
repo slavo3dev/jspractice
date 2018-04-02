@@ -13,10 +13,8 @@ for (var i = 0; i < 2; i++) {
   arr_new.push([]);
 }
 
-console.log(arr_new);
-
 for (var i = 0; i < 2; i++) {
-  arr_new[0].push(arr.slice(0, 2));
+  arr_new[i].push(arr.slice(i, i + 2));
 }
 
 console.log(arr_new);
