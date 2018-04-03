@@ -16,3 +16,9 @@ console.log(slasher([1, 2, 3], 9)); // should return [].
 console.log(slasher([1, 2, 3], 4)); // should return [].
 console.log(slasher(["burgers", "fries", "shake"], 1)); // should return ["fries", "shake"].
 console.log(slasher([1, 2, "chicken", 3, "potatoes", "cheese", 4], 5)); // should return ["cheese", 4].
+
+// advance solution
+function slasher(arr, howMany) {
+  // Return string after the amount chopped off.
+  return arr.slice(howMany);
+}
