@@ -1,7 +1,7 @@
 let name = "slavo";
 
 for (var i = 0; i < name.length; i++) {
-  if ("moroslav".indexOf(name[i] === -1)) {
+  if ("moroslav".indexOf(name[i]) === -1) {
     console.log("You understand this shit");
   }
 
@@ -13,10 +13,12 @@ function mutation(arr) {
   var arr0 = arr[0].toLowerCase();
 
   for (var i = 0; i < arr1.length; i++) {
-    if (arr[0].indexOf(arr1[i] === -1)) {
+    if (arr[0].indexOf(arr1[i]) === -1) {
       return false;
     }
 
     return true;
   }
 }
+
+console.log(mutation(["floor", "for"]));
