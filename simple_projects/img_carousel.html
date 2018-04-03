@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
-<body>
+<body onload="loopImg()">
     <div id='wrapper'> JavaScript </div>
     <img id='image'>
 </body>
@@ -18,15 +18,21 @@
     var imgColors = ["111", "222", "FF0000", "00FF00", "0000FF", "000", "333"];
 
     function loopImg() {
-        setInterval(swichImage, 2000);
+        // images.src = "http://via.placeholder.com/350x150/" + imgColors[imgPlace] + "/fff?text=Slavo_" + imgList[
+        //     imgPlace] + "_Developer";
+        setInterval(swichImage, 1000);
     }
 
     function swichImage() {
-        imgPlace++;
+
+        if (imgPlace >= imgList.length) {
+            imgPlace = 0
+        }
         var images = document.getElementById('image');
         images.src = "http://via.placeholder.com/350x150/" + imgColors[imgPlace] + "/fff?text=Slavo_" + imgList[
-            imgPlace];
-        console.log(images.src)
+            imgPlace] + "_Developer";
+        // console.log(images.src)
+        imgPlace++;
     }
 </script>
 
