@@ -4,7 +4,7 @@
 
 function bouncer(arr) {
   // Don't show a false ID to this bouncer.
-  return arr;
+  return arr.filter(item => Boolean(item) === true);
 }
 
-bouncer([7, "ate", "", false, 9]);
+console.log(bouncer([7, "ate", "", false, 9]));
