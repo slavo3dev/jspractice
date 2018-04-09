@@ -3,15 +3,17 @@
 // from the initial array that are of the same value as these arguments.
 
 function destroyer(arr, ...arg) {
-    // Remove all the values
-    return arr;
+  // Remove all the values
+  return arr;
 }
 
-destroyer([
-    1,
-    2,
-    3,
-    1,
-    2,
-    3
-], 2, 3);
+destroyer([1, 2, 3, 1, 2, 3], 2, 3);
+
+// advance
+
+function destroyer(arr) {
+  var args = Array.from(arguments).slice(1);
+  return arr.filter(function(val) {
+    return !args.includes(val);
+  });
+}
