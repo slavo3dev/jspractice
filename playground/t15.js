@@ -5,6 +5,9 @@ function test(...arr) {
 let arr = [[1, 2, 3, 4, 5], 1, 2, 3];
 console.log(arr[2]);
 
-const newArr = arr.filter((item = arr[0][item] !== item));
+const newArr = arr[0].concat(arr[1]);
+
+let arrNew = newArr.sort();
 
 console.log(newArr);
+console.log(arrNew);
