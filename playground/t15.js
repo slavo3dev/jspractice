@@ -1,14 +1,5 @@
-function test(...arr) {
-    console.log(arr[0][2]);
-}
+let arr = [[1, 2, 3, 4], 1, 2];
 
-let arr = [
-    [
-        1, 2, 3, 4, 5
-    ],
-    1,
-    2,
-    3
-];
+let newArr = arr[0].concat(arr);
 
-let newArr = arr.filter(item => item === arr[0]);
+console.log(newArr);
