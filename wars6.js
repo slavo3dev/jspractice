@@ -21,4 +21,4 @@ function zeros(n) {
 }
 
 console.log(`Factorial numnber: ${factorial(6)}`);
-console.log(`Number of trailing zeros of N! ${zeros(6)}`);
+console.log(`Number of trailing zeros of N! is: ${zeros(6)}`);
