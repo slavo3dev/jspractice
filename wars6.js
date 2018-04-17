@@ -6,4 +6,19 @@
 
 // For more info, see: http://mathworld.wolfram.com/Factorial.html
 
+function factorial(n) {
+  if (n === 1) {
+    return 1;
+  }
 
+  return n * factorial(n - 1);
+}
+
+function zeros(n) {
+  var result = 0;
+  while ((n = Math.floor(n / 5))) result += n;
+  return result;
+}
+
+console.log(`Factorial numnber: ${factorial(6)}`);
+console.log(`Number of trailing zeros of N! ${zeros(6)}`);
