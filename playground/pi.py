@@ -1,3 +1,4 @@
+# Kadane's algorithm
 def max_subarray(A):
     max_ending_here = max_so_far = A[0]
     for x in A[1:]:
