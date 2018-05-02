@@ -5,7 +5,7 @@ var maxSequence = function(arr) {
     return 0;
   }
 
-  let nArr = arr.filter(x => x > 0);
+  let nArr = arr.filter(x => x >= -1);
   let arr_new = nArr.filter((a,b) => nArr.indexOf(a) === b);
   return arr_new.reduce((a, b) => a + b);
 };
