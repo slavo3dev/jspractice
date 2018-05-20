@@ -77,3 +77,14 @@ const mul = (...nums) => {
 
 console.log(mul(1, 2, 4))
 console.log('-----------------');
+
+// Write a function min that is generalized for any amount of arguments
+
+const min = (...nums) => {
+    return nums.reduce((a, b) => a < b
+        ? a
+        : b);
+}
+
+console.log(min(1, 2, 4))
+console.log('-----------------');
