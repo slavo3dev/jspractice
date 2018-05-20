@@ -86,5 +86,5 @@ const min = (...nums) => {
         : b);
 }
 
-console.log(min(1, 2, 4))
+console.log(min(7, 2, 1, 35, -1, -9, 44, 67))
 console.log('-----------------');
