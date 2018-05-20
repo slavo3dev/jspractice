@@ -120,7 +120,7 @@ console.log('-----------------');
 // recursion
 
 const mulRecurse = (...nums) => {
-    if (nums.length < 0) {
+    if (nums.length < 1) {
         return 0
     }
 
@@ -132,4 +132,55 @@ const mulRecurse = (...nums) => {
 }
 
 console.log(mulRecurse(1, 2, 4))
+console.log('-----------------');
+
+// Write a function minRecurse that is the generalized min function but uses
+// recursion
+
+const minRecurseMy = (...nums) => {
+    if (nums.length < 1) {
+        return 'Empty Array'
+    }
+
+    if (nums.length === 1) {
+        return nums[0]
+    }
+
+    return nums[0] < minRecurseMy(...nums.slice(1))
+        ? nums[0]
+        : minRecurseMy(...nums.slice(1))
+}
+
+console.log(minRecurseMy(1, 2, 6, 7, -6, 9, 44, 4))
+console.log('-----------------');
+
+function minRecurse(...nums) {
+    if (nums.length < 1) {
+        return Number.MAX_VALUE;
+    }
+    if (nums.length === 1) {
+        return nums[0];
+    }
+    return minb(nums[0], minRecurse(...nums.slice(1)));
+}
+
+console.log(minRecurse(2, 6, 7, -6, 9, 44, 4))
+console.log('-----------------');
+
+// Write a function maxRecurse that is the generalized max function but uses
+// recursion
+
+const maxRecurse = (...nums) => {
+    if (nums.length < 1) {
+        return 'Empty Array'
+    }
+
+    if (nums.length === 1) {
+        return nums[0]
+    }
+
+    return maxb(nums[0], maxRecurse(...nums.slice(1)))
+}
+
+console.log(maxRecurse(2, 6, 7, -6, 9, 44, 4))
 console.log('-----------------');
