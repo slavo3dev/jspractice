@@ -69,4 +69,11 @@ const sub = (...nums) => {
 console.log(sub(1, 2, 4))
 console.log('-----------------');
 
-//
+// Write a function mul that is generalized for any amount of arguments
+
+const mul = (...nums) => {
+    return nums.reduce((a, b) => a * b)
+}
+
+console.log(mul(1, 2, 4))
+console.log('-----------------');
