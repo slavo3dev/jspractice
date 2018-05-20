@@ -12,3 +12,12 @@ const addb = (a, b) => {
 }
 console.log(addb(3, 4))
 console.log('-----------------------')
+
+// Write a binary function subb that takes two numbers and returns their
+// difference
+
+const subb = (a, b) => {
+    return a - b
+}
+console.log(subb(3, 4));
+console.log('----------------------')
