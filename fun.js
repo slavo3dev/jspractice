@@ -198,3 +198,19 @@ const isEven = not(isOdd);
 
 console.log(isEven(3))
 console.log('-----------------');
+
+// Write a function acc that takes a function and an initial value and returns a
+// function that runs the initial function on each argument, accumulating the
+// result
+
+const acc = (func, initial) => {
+    return function (...args) {
+        return args.reduce((result, curr, idx) => {
+            return func(result, curr, idx);
+        }, initial);
+    };
+}
+
+console.log(acc(addb(1, 2), 4))
+console.log(acc(mulb(1, 2), 4))
+console.log('-----------------')
