@@ -57,7 +57,7 @@ console.log('---------------------------')
 const add = (...nums) => {
     return nums.reduce((a, b) => a + b)
 }
-console.log(add(1, 2, 4, 5))
+console.log("add " + add(1, 2, 4, 5))
 console.log('-----------------');
 
 // Write a function sub that is generalized for any amount of arguments
@@ -98,4 +98,38 @@ const max = (...nums) => {
 }
 
 console.log(max(7, 2, 1, 35, 567, -1, -9, 44, 67))
+console.log('-----------------');
+
+// Write a function addRecurse that is the generalized add function but uses
+// recursion
+
+function addRecurse(...nums) {
+    if (nums.length < 1) {
+        return 0;
+    }
+    if (nums.length === 1) {
+        return nums[0];
+    }
+    return nums[0] + addRecurse(...nums.slice(1));
+}
+
+console.log(addRecurse(1, 2, 4))
+console.log('-----------------');
+
+// Write a function mulRecurse that is the generalized mul function but uses
+// recursion
+
+const mulRecurse = (...nums) => {
+    if (nums.length < 0) {
+        return 0
+    }
+
+    if (nums.length == 1) {
+        return nums[0]
+    }
+
+    return nums[0] * mulRecurse(...nums.slice(1))
+}
+
+console.log(mulRecurse(1, 2, 4))
 console.log('-----------------');
