@@ -184,3 +184,17 @@ const maxRecurse = (...nums) => {
 
 console.log(maxRecurse(2, 6, 7, -6, 9, 44, 4))
 console.log('-----------------');
+
+// Write a function not that takes a function and returns the negation of its
+// result
+
+const not = (a) => {
+    return function (...args) {
+        return !a(...args);
+    };
+}
+const isOdd = x => x % 2 === 1;
+const isEven = not(isOdd);
+
+console.log(isEven(3))
+console.log('-----------------');
