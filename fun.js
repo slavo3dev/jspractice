@@ -88,3 +88,14 @@ const min = (...nums) => {
 
 console.log(min(7, 2, 1, 35, -1, -9, 44, 67))
 console.log('-----------------');
+
+// Write a function max that is generalized for any amount of arguments
+
+const max = (...nums) => {
+    return nums.reduce((a, b) => a > b
+        ? a
+        : b)
+}
+
+console.log(max(7, 2, 1, 35, 567, -1, -9, 44, 67))
+console.log('-----------------');
