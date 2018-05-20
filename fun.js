@@ -210,7 +210,8 @@ function acc(func, initial) {
         }, initial);
     };
 }
-let add_d = acc(addb(1, 2), 4)
-console.log(add_d)
-console.log(acc(mulb(1, 2), 4))
+let add_d = acc(addb, 4)
+let mul_b = acc(mulb, 2)
+console.log(add_d(1, 2, 3))
+console.log(mul_b(2, 3, 3))
 console.log('-----------------')
