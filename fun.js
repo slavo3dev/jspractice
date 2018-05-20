@@ -21,3 +21,11 @@ const subb = (a, b) => {
 }
 console.log(subb(3, 4));
 console.log('----------------------')
+
+// Write a binary function mulb that takes two numbers and returns their product
+
+const mulb = (a, b) => {
+    return a * b
+}
+console.log(mulb(3, 4))
+console.log('-------------------')
