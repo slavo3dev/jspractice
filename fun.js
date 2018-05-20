@@ -59,3 +59,14 @@ const add = (...nums) => {
 }
 console.log(add(1, 2, 4, 5))
 console.log('-----------------');
+
+// Write a function sub that is generalized for any amount of arguments
+
+const sub = (...nums) => {
+    return nums.reduce((a, b) => a - b)
+}
+
+console.log(sub(1, 2, 4))
+console.log('-----------------');
+
+//
