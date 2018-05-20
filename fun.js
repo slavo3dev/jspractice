@@ -203,14 +203,14 @@ console.log('-----------------');
 // function that runs the initial function on each argument, accumulating the
 // result
 
-const acc = (func, initial) => {
+function acc(func, initial) {
     return function (...args) {
         return args.reduce((result, curr, idx) => {
-            return func(result, curr, idx);
+            return func(result, curr, idx)
         }, initial);
     };
 }
-
-console.log(acc(addb(1, 2), 4))
+let add_d = acc(addb(1, 2), 4)
+console.log(add_d)
 console.log(acc(mulb(1, 2), 4))
 console.log('-----------------')
