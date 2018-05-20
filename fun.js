@@ -51,3 +51,11 @@ const maxb = (a, b) => {
 }
 console.log(maxb(3, 4));
 console.log('---------------------------')
+
+// Write a function add that is generalized for any amount of arguments
+
+const add = (...nums) => {
+    return nums.reduce((a, b) => a + b)
+}
+console.log(add(1, 2, 4, 5))
+console.log('-----------------');
