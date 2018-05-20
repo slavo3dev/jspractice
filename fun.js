@@ -215,3 +215,10 @@ let mul_b = acc(mulb, 2)
 console.log(add_d(1, 2, 3))
 console.log(mul_b(2, 3, 3))
 console.log('-----------------')
+
+// Write a function accPartial that takes in a function, a start index, and an
+// end index, and returns a function that accumulates a subset of its arguments
+// by applying the given function to all elements between start and end.
+
+const addSecondToThird = accPartial(add, 1, 3);
+addSecondToThird(1, 2, 4, 8) // [ 1, 6, 8 ]
