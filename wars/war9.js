@@ -8,3 +8,5 @@ function humanReadable(seconds) {
     let minutes = seconds / 60
     return minutes
 }
+
+humanReadable(3600);
