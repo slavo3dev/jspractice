@@ -9,4 +9,4 @@ function humanReadable(seconds) {
     return minutes
 }
 
-humanReadable(3600);
+console.log(humanReadable(3600));
