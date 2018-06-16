@@ -7,7 +7,7 @@
 function humanReadable(seconds) {
     let minutes = seconds / 60
     let hours = minutes / 60
-    return minutes
+    return hours
 }
 
 console.log(humanReadable(3600));
