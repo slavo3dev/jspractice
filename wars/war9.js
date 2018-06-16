@@ -5,5 +5,6 @@
 // 359999 (99:59:59) You can find some examples in the test fixtures.
 
 function humanReadable(seconds) {
-    // TODO
+    let minutes = seconds / 60
+    return minutes
 }
