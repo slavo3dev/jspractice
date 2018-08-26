@@ -11,7 +11,9 @@ function last(x){
    for (let i = 0; i < arr.length; i++){
       rev_arr.push(arr[i].split('').reverse().join(''))  
    }
+   
    rev_arr = rev_arr.sort()
+
    for(let i = 0; i < rev_arr.length; i++){
        alpha_arr.push(rev_arr[i].split('').reverse().join(''))
    }
