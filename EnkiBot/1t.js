@@ -24,15 +24,21 @@ let arr = x.split(' ')
        rev_arr.push(arr[i].split('').reverse().join(''))  
     }
     
-    
+for (const key of rev_arr) {
+        obj[key] = rev_arr.indexOf(key);
+   }
+   
+  arrFromObj = [];
  
     // for(let i = 0; i < rev_arr.length; i++){
     //     alpha_arr.push(rev_arr[i].split('').reverse().join(''))
     // }
-    for (const key of rev_arr) {
-      obj[key] = key;
+    
+ for(key in obj){
+    arrFromObj.push(key)
  }
- return obj
+
+ return arrFromObj
 }
 
 console.log(newLast('we time are the'))
