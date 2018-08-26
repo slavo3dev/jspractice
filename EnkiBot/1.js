@@ -5,19 +5,21 @@
 // All inputs will be valid.
 
 function last(x){
-   let arr = x.split(' ')
-   let rev_arr = []
-   let alpha_arr = [];
-   for (let i = 0; i < arr.length; i++){
-      rev_arr.push(arr[i].split('').reverse().join(''))  
-   }
-   
-   rev_arr = rev_arr.sort()
+   const words = x.split(' ')
 
-   for(let i = 0; i < rev_arr.length; i++){
-       alpha_arr.push(rev_arr[i].split('').reverse().join(''))
-   }
-   return alpha_arr
+  const arrayWithFlippedWords = words.map(word => 
+    word.split('').reverse().join('')
+   );
+  
+  const arrayWithFlippedWordsSortedByFirstLetter = arrayWithFlippedWords.sort(
+    (word1, word2) => word1[0] > word2[0]
+  );
+  
+  const arraySortedByFirstLetter = arrayWithFlippedWordsSortedByFirstLetter.map(
+    word => word.split('').reverse().join('')
+  )
+  
+  return arraySortedByFirstLetter;
 }
 
 console.log("['a', 'need', 'ubud', 'i', 'taxi', 'man', 'to', 'up'] =");

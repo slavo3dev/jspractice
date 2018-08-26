@@ -1,40 +1,25 @@
-function last(x){
-    let arr = x.split(' ')
-    let rev_arr = []
-    let alpha_arr = [];
-    for (let i = 0; i < arr.length; i++){
-       rev_arr.push(arr[i].split('').reverse().join(''))  
-    }
-    
-    rev_arr = rev_arr.sort()
- 
-    for(let i = 0; i < rev_arr.length; i++){
-        alpha_arr.push(rev_arr[i].split('').reverse().join(''))
-    }
-    return alpha_arr
- }
-console.log(last('we time are the'))
-console.log('---------------------')
-function newLast(x){
-let obj = {};
-let arr = x.split(' ')
-    let rev_arr = []
-    let alpha_arr = [];
-    for (let i = 0; i < arr.length; i++){
-       rev_arr.push(arr[i].split('').reverse().join(''))  
-    }
-    
-for (const key of rev_arr) {
-        obj[key] = rev_arr.indexOf(key);
-   }
 
-obj = Object.keys(obj)
-   .sort()
-   .reduce((acc, key) => ({
-       ...acc, [key]: obj[key]
-   }), {})
+x = 'what time are we climbing up the volcano';
+const words = x.split(' ')
+console.log(words);
+console.log('--------------')
 
- return obj
-}
+const arrayWithFlippedWords = words.map(word => 
+    word.split('').reverse().join('')
+   );
 
-console.log(newLast('what time are we climbing up the volcano'))
+console.log(arrayWithFlippedWords);
+console.log('--------------------')
+
+const arrayWithFlippedWordsSortedByFirstLetter = arrayWithFlippedWords.sort(
+    (word1, word2) => word1[0] > word2[0]
+  );
+
+console.log(arrayWithFlippedWordsSortedByFirstLetter)
+console.log('--------------------------------------')
+
+const arraySortedByFirstLetter = arrayWithFlippedWordsSortedByFirstLetter.map(
+word => word.split('').reverse().join(''))
+
+console.log(arraySortedByFirstLetter)
+console.log('-----------------------')
