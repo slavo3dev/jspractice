@@ -4,8 +4,6 @@
 
 // All inputs will be valid.
 
-
-
 function last(x){
    let arr = x.split(' ')
    let rev_arr = []
@@ -20,5 +18,8 @@ function last(x){
    return alpha_arr
 }
 
-console.log("['a', 'need', 'ubud', 'i', 'taxi', 'man', 'to', 'up'] =",last("man i need a taxi up to ubud"))
-console.log("['time', 'are', 'we', 'the', 'climbing', 'volcano', 'up', 'what']==",last('what time are we climbing up the volcano'));
+console.log("['a', 'need', 'ubud', 'i', 'taxi', 'man', 'to', 'up'] =");
+console.log(last("man i need a taxi up to ubud"))
+console.log('---------------------------')
+console.log("['time', 'are', 'we', 'the', 'climbing', 'volcano', 'up', 'what']==");
+console.log(last('what time are we climbing up the volcano'))
