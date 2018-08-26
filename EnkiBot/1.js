@@ -20,4 +20,5 @@ function last(x){
    return alpha_arr
 }
 
-console.log(last("man i need a taxi up to ubud"))
+console.log("['a', 'need', 'ubud', 'i', 'taxi', 'man', 'to', 'up'] =",last("man i need a taxi up to ubud"))
+console.log("['time', 'are', 'we', 'the', 'climbing', 'volcano', 'up', 'what']==",last('what time are we climbing up the volcano'));
