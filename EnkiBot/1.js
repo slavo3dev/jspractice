@@ -8,10 +8,16 @@
 
 function last(x){
    let arr = x.split(' ')
+   let rev_arr = []
+   let alpha_arr = [];
    for (let i = 0; i < arr.length; i++){
-       arr[i].split().reverse()
+      rev_arr.push(arr[i].split('').reverse().join(''))  
    }
-   console.log(arr)
+   rev_arr = rev_arr.sort()
+   for(let i = 0; i < rev_arr.length; i++){
+       alpha_arr.push(rev_arr[i].split(' ').reverse().join(''))
+   }
+   console.log(alpha_arr)
 }
 
 console.log(last("man i need a taxi up to ubud"))
