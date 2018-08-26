@@ -17,7 +17,7 @@ function last(x){
    for(let i = 0; i < rev_arr.length; i++){
        alpha_arr.push(rev_arr[i].split(' ').reverse().join(''))
    }
-   console.log(alpha_arr)
+   return alpha_arr
 }
 
 console.log(last("man i need a taxi up to ubud"))
