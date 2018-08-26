@@ -8,5 +8,10 @@
 
 function last(x){
    let arr = x.split(' ')
-   return arr.sort()
+   for (let i = 0; i < arr.length; i++){
+       arr[i].split().reverse()
+   }
+   console.log(arr)
 }
+
+console.log(last("man i need a taxi up to ubud"))
