@@ -27,18 +27,14 @@ let arr = x.split(' ')
 for (const key of rev_arr) {
         obj[key] = rev_arr.indexOf(key);
    }
-   
-  arrFromObj = [];
- 
-    // for(let i = 0; i < rev_arr.length; i++){
-    //     alpha_arr.push(rev_arr[i].split('').reverse().join(''))
-    // }
-    
- for(key in obj){
-    arrFromObj.push(key)
- }
 
- return arrFromObj
+obj = Object.keys(obj)
+   .sort()
+   .reduce((acc, key) => ({
+       ...acc, [key]: obj[key]
+   }), {})
+
+ return obj
 }
 
-console.log(newLast('we time are the'))
+console.log(newLast('what time are we climbing up the volcano'))
