@@ -15,7 +15,7 @@ function last(x){
    }
    rev_arr = rev_arr.sort()
    for(let i = 0; i < rev_arr.length; i++){
-       alpha_arr.push(rev_arr[i].split(' ').reverse().join(''))
+       alpha_arr.push(rev_arr[i].split('').reverse().join(''))
    }
    return alpha_arr
 }
