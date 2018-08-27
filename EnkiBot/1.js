@@ -5,7 +5,7 @@
 // All inputs will be valid.
 
 function last(x){
-   const words = x.split(' ')
+  const words = x.split(' ')
 
   const arrayWithFlippedWords = words.map(word => 
     word.split('').reverse().join('')
@@ -18,7 +18,7 @@ function last(x){
   const arraySortedByFirstLetter = arrayWithFlippedWordsSortedByFirstLetter.map(
     word => word.split('').reverse().join('')
   )
-  
+
   return arraySortedByFirstLetter;
 }
 
