@@ -7,7 +7,14 @@ for (let i = 0; i < arr.length; i++){
 }
 
 arrStr = arrStr.map(x => x.split(''));
+arrStr = arrStr.map(x => x.map(y => parseInt(y)));
 
-arrStr = 
+for (let i = 0; i < arrStr.length; i++){
+    if (arrStr[0]){
+        arr[0].splice(0,2)
+    }
+}
+
+
 
 console.log(arrStr);
