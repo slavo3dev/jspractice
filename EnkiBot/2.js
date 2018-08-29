@@ -4,3 +4,16 @@
 
 // filter() always accept a function as parameter, the function always return boolean value true or false. filter() returns a new array that contains only the elements that meet the conditions(The elements as a parameters of the function, return true value).
 
+
+/* 
+
+Grading rules:
+```
+Grade S: Full marks(score=100)
+Grade A: score<100 and score>=90
+Grade B: score<90 and score>=80
+Grade C: score<80 and score>=60
+Grade D: score<60 and score>=0
+Grade X: score=-1(The cheating guy gets a score like that)
+
+*/
