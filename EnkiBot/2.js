@@ -20,7 +20,11 @@ Grade X: score=-1(The cheating guy gets a score like that)
 
 function countGrade(scores){
     //coding here...
+    let grade = [S, A, B, C, D, X]
+    let gradeResult = {}
+
     
+
   }
 
 
