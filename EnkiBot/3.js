@@ -74,8 +74,7 @@ function tailAndHead(arr){
    
     // count chuncks 
     let accountArr = chankArr.map(x => x.reduce((a,b) => a + b));
-    
-    
+
     let result = accountArr.reduce((a,b) => a*b)
     
     return result
