@@ -11,10 +11,10 @@ arrStr = arrStr.map(x => x.map(y => parseInt(y)));
 
 for(var i = 0; i < arrStr.length; i++){
     if (i === 0){
-        arrStr[i].splice(1)
+        arrStr[i].splice(-1)
         console.log('hello 1')
     } else if ( i === arrStr.length - 1 ){
-        console.log(arrStr[i])
+        arrStr[i].splice(1)
 }
 }
 
