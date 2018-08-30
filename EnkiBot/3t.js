@@ -9,12 +9,15 @@ for (let i = 0; i < arr.length; i++){
 arrStr = arrStr.map(x => x.split(''));
 arrStr = arrStr.map(x => x.map(y => parseInt(y)));
 
-for (let i = 0; i < arrStr.length; i++){
-    if (arrStr[0]){
-        arr[0].splice(0,2)
-    }
+for(var i = 0; i < arrStr.length; i++){
+    if (i === 0){
+        arrStr[i].splice(1)
+        console.log('hello 1')
+    } else if ( i === arrStr.length - 1 ){
+        console.log(arrStr[i])
+}
 }
 
 
-
 console.log(arrStr);
+console.log(newArr)
