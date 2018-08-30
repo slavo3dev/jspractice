@@ -21,7 +21,24 @@ for(var i = 0; i < arrStr.length; i++){
         arrStr[i].splice(1, arrStr[i].length - 2)
     }
 }
+
 console.log(arrStr);
-console.log("----------------------")
+
+newArr = arrStr.reduce((a,b) => a.concat(b))
 
 console.log(newArr)
+
+let chankArr = newArr.reduce((resultArray, item, index) => { 
+    const chunkIndex = Math.floor(index/2)
+  
+    if(!resultArray[chunkIndex]) {
+      resultArray[chunkIndex] = [] // start a new chunk
+    }
+  
+    resultArray[chunkIndex].push(item)
+  
+    return resultArray
+  }, [])
+console.log("----------------------")
+
+console.log(chankArr)
