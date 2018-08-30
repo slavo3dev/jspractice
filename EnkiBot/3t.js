@@ -21,8 +21,7 @@ for(var i = 0; i < arrStr.length; i++){
         arrStr[i].splice(1, arrStr[i].length - 2)
     }
 }
-
 console.log(arrStr);
-
+console.log("----------------------")
 
 console.log(newArr)
