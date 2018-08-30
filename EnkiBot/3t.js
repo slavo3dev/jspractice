@@ -3,8 +3,8 @@ let arr1 = [1,2,3,4,5]
 let arrStr = [];
 let newArr = []
 
-for (let i = 0; i < arr1.length; i++){
-    arrStr.push(arr1[i].toString());
+for (let i = 0; i < arr.length; i++){
+    arrStr.push(arr[i].toString());
 }
 
 arrStr = arrStr.map(x => x.split(''));

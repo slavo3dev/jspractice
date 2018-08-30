@@ -28,7 +28,57 @@ tailAndHead([35456,782,569,2454,875]) should return 12012
 */
 
 function tailAndHead(arr){
+    let arrStr = [];
+    let newArr = []
+    // convert all numbers to string
+    for (let i = 0; i < arr.length; i++){
+        arrStr.push(arr[i].toString());
+    }
     
+    // split string and make array of every string and convert back to int 
+    arrStr = arrStr.map(x => x.split(''));
+    arrStr = arrStr.map(x => x.map(y => parseInt(y)));
+    
+
+    // prepare all array for future countung 
+    for(var i = 0; i < arrStr.length; i++){
+        if (i === 0){
+            arrStr[i].splice(0, arrStr[i].length - 1)
+        } else if ( i === arrStr.length - 1 ){
+            arrStr[i].splice(1)
+        } else if (arrStr[i].length === 2) {
+            continue
+        } else if (arrStr[i].length === 1){
+               arrStr[i].push(arrStr[i][0])
+        } else {
+            arrStr[i].splice(1, arrStr[i].length - 2)
+        }
+    }
+    
+    // concate array
+    newArr = arrStr.reduce((a,b) => a.concat(b))
+    
+   
+    // making chunks off array
+    let chankArr = newArr.reduce((resultArray, item, index) => { 
+        const chunkIndex = Math.floor(index/2)
+      
+        if(!resultArray[chunkIndex]) {
+          resultArray[chunkIndex] = [] // start a new chunk
+        }
+      
+        resultArray[chunkIndex].push(item)
+      
+        return resultArray
+      }, [])
+   
+    // count chuncks 
+    let accountArr = chankArr.map(x => x.reduce((a,b) => a + b));
+    
+    
+    let result = accountArr.reduce((a,b) => a*b)
+    
+    return result
     
   }
 
