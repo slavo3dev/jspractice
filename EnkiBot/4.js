@@ -9,6 +9,7 @@ In the end, click "Submit" to submit your code pass this kata.
 */
 
 var v1=50;v2=100,v3=150,v4=200,v5=2,v6=250
+
 function equal1(){
   var a=v1   
   var b=v1   
