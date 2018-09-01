@@ -4,6 +4,7 @@ for (num in arr){
     console.log(num)
 }
 
+console.log("-----------------------")
 
 for (num of arr){
     console.log(num)
