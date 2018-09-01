@@ -17,9 +17,12 @@ function descendingOrder(n){
     // use map function to map all charachter and convert to int
     // use sort function to sort all number from bigger to smaller
     // use join function to join all characeters - join automaticly coverts array of numbers to string.
-    let reversNumberSort = n.toString().split('').map(x => parseInt(x)).sort((a,b) => b -a ).join('').parseInt(reversNumberSort);
+    let reversNumberSort = n.toString().split('').map(x => parseInt(x)).sort((a,b) => b -a ).join('')
    
-    return reversNumberSort
+    // return sting and covert string to a number
+    return parseInt(reversNumberSort);
   }
 
-console.log(descendingOrder(4563));
+console.log("4563 reverse and sort: ", descendingOrder(4563));
+console.log("145263 reverse and sort ", descendingOrder(145263));
+console.log("1254859723 reverse and sort ", descendingOrder(1254859723));
