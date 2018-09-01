@@ -36,3 +36,5 @@ function equal5(){
   var b=v3  //set number value to b
   return a%b;
 }
+
+
