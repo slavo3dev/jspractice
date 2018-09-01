@@ -1,4 +1,4 @@
-let arr = [1,2,3,4,5]
+let arr = [22,34,45,6,7]
 
 for (num in arr){
     console.log(num)
