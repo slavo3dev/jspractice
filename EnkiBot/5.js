@@ -1,11 +1,16 @@
-let arr = [22,34,45,6,7]
+/* 
 
-for (num in arr){
-    console.log(num)
-}
+Your task is to make a function that can take any non-negative integer as a argument and return it with its digits in descending order. Essentially, rearrange the digits to create the highest possible number.
 
-console.log("-----------------------")
+Examples:
+Input: 21445 Output: 54421
 
-for (num of arr){
-    console.log(num)
-}
+Input: 145263 Output: 654321
+
+Input: 1254859723 Output: 9875543221
+
+*/
+
+function descendingOrder(n){
+   
+  }

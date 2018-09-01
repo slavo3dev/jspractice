@@ -1,5 +1,5 @@
 # jspractice
-practicing JavaScript - algorithams
+practicing JavaScript - algorithms
 # Enki Bot practice 
 
 ### filter , object practice 
