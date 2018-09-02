@@ -23,3 +23,4 @@ word => word.split('').reverse().join(''))
 
 console.log(arraySortedByFirstLetter)
 console.log('-----------------------')
+
