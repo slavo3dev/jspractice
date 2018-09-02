@@ -9,14 +9,14 @@ In the past, the general strategy for setting defaults was to test parameter val
 
 */
 
-function defaultExample(x, y) {
+function defaultExample(x, y=7) {
     return x + y;
   }
   
-  function restExample(x, y) {
+  function restExample(x, ...y) {
     return x * y.length;
   }
   
-  function spreadExample(x) {
+  function spreadExample(...x) {
     return x[0] + x[1] + x[2];
   }
