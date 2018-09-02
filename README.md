@@ -14,3 +14,6 @@ practicing JavaScript - algorithms
 
 ### Descending Order
 ![screen shot 2018-09-1 at 11 00 56 am](https://user-images.githubusercontent.com/18499909/44947110-0a2b0c00-add6-11e8-8cb3-c43b26e67bc4.png)
+
+### Default + Rest + Spread
+![screen shot 2018-09-02 at 12 00 07 pm](https://user-images.githubusercontent.com/18499909/44958019-ecc67280-aea7-11e8-9e87-7f4794aed7ce.png)
