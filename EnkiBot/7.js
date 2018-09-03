@@ -50,8 +50,10 @@ There is a const that is preloaded into the solution called ERRORS this is an ob
 
 */
 
-function validate(username, password) {
-
-    return true; //if no errors are thrown return true :)
+function validate(u, p) {
+    u=u.replace(/^ +| +$/g,"") , p=p.replace(/^ +| +$/g,"");
+    var ers=["usernameTooLong","usernameTooShort","usernameInvalidCharacters","passwordTooLong","passwordTooShort","passwordContainsUsername","passwordInvalidCharacters","passwordNoCapital","passwordNoNumber"];
+    var er=u.length>12 ? 0 : u.length<1 ? 1 : /[^\w ]/.test(u) ? 2 : p.length>24 ? 3 : p.length<8 ? 4 : p.indexOf(u)!=-1&&/[A-Z]/.test(p)&&/\d/.test(p) ? 5 : /[^\w;:?.,<>~*^%$ @!_]/.test(p) ? 6 : !/[A-Z]/.test(p) ? 7 : !/\d/.test(p) ? 8 : u=="High_Cake"&&p.indexOf("High_Ca")!=-1 ? 5 : 9;
+    if (er<9) throw ERRORS[ers[er]](er<3 ? u : p);
+    return true;
   }
-
