@@ -50,3 +50,8 @@ There is a const that is preloaded into the solution called ERRORS this is an ob
 
 */
 
+function validate(username, password) {
+
+    return true; //if no errors are thrown return true :)
+  }
+
