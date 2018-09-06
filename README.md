@@ -17,3 +17,6 @@ practicing JavaScript - algorithms
 
 ### Default + Rest + Spread
 ![screen shot 2018-09-02 at 12 00 07 pm](https://user-images.githubusercontent.com/18499909/44958019-ecc67280-aea7-11e8-9e87-7f4794aed7ce.png)
+
+### Binding
+![screen shot 2018-09-06 at 12 11 04 am](https://user-images.githubusercontent.com/18499909/45134647-98eab080-b169-11e8-80e9-88dd9fd5bf01.png)
