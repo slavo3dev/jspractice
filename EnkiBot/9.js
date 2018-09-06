@@ -14,12 +14,13 @@ alienLanguage("Hello World") should return "HELLo WORLd"
 ```
 A small hint: The first conversion of the entire string will make the code easier
 
-
-
 */
 
 function alienLanguage(str) {
-    let strArr = str.split(" ");
+    let arr = str.split(" ")
+    arr = arr.map(x => x.slice(0, x.length - 1).toUpperCase() + x[x.length - 1].toLowerCase()).join(' ')
+
+    return arr;
 }
 
 
