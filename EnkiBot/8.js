@@ -15,7 +15,7 @@ func = func.bind(obj2);
 func(); // Will also produce 1 :
 
 */
-function.prototype.bind(ctx) {
+function.prototype.bind = function (ctx) {
   var _this = this;
 
   if (this.orFn) {
