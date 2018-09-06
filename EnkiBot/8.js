@@ -15,3 +15,16 @@ func = func.bind(obj2);
 func(); // Will also produce 1 :
 
 */
+function.prototype.bind(ctx) {
+  var _this = this;
+
+  if (this.orFn) {
+    _this = this.orFn;
+  }
+  var foo = function () {
+    return _this.apply(ctx);
+  }
+
+  foo.orFn = _this;
+  return foo;
+}
