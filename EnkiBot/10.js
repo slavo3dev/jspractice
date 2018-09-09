@@ -16,7 +16,6 @@ class Person {
     infoString() {
         return `${this.name}s age is ${this.age}`
     }
-
 }
 
 let john = new Person('john', 34) // 'johns age is 34'
