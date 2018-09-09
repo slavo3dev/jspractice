@@ -20,3 +20,6 @@ practicing JavaScript - algorithms
 
 ### Binding
 ![screen shot 2018-09-06 at 12 11 04 am](https://user-images.githubusercontent.com/18499909/45134647-98eab080-b169-11e8-80e9-88dd9fd5bf01.png)
+
+Training JS #19: Methods of String object--toUpperCase() toLowerCase() and replace()
+![screen shot 2018-09-06 at 1 07 13 am](https://user-images.githubusercontent.com/18499909/45136327-7bb9e000-b171-11e8-84bd-6cfe7c10b18b.png)
