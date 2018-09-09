@@ -5,6 +5,10 @@
 
 class Person {
     constructor() {
-
+        this.name = name;
+        this.age = age
     }
 }
+
+let john = new Person('john', 34)
+console.log('John')
