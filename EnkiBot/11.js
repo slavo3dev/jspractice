@@ -11,7 +11,24 @@ If the decimal point is on the right side of the number (that is, the count of d
 */
 
 function roundIt(n){
-    return Math.ceil(n);
+
+  const [integer, decimals] = String(n).split('.')
+
+  if (decimals.length > integer.length)
+
+        {   return Math.ceil(n)
+        
+        } else if (decimals.length < integer.length) {
+              
+            return Math.floor(n)
+            
+        } else if  (decimals.length === integer.length) {
+                   
+            return Math.round(n)
+
+        } else {
+            return 
+        }
   }
 
 
