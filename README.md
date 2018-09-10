@@ -24,5 +24,8 @@ practicing JavaScript - algorithms
 Training JS #19: Methods of String object--toUpperCase() toLowerCase() and replace()
 ![screen shot 2018-09-06 at 1 07 13 am](https://user-images.githubusercontent.com/18499909/45136327-7bb9e000-b171-11e8-84bd-6cfe7c10b18b.png)
 
-# Classy Classes 
+### Classy Classes 
 ![screen shot 2018-09-08 at 10 49 55 pm](https://user-images.githubusercontent.com/18499909/45260632-65529500-b3ba-11e8-99ba-678c4e4d0dea.png)
+
+### Training JS #32: methods of Math---round() ceil() and floor()
+![screen shot 2018-09-10 at 5 31 40 pm](https://user-images.githubusercontent.com/18499909/45325737-c051cc80-b51f-11e8-8338-29b54383a27d.png)
