@@ -9,3 +9,15 @@ If the decimal point is on the right side of the number (that is, the count of d
 
 
 */
+
+function roundIt(n){
+    return Math.ceil(n);
+  }
+
+
+console.log(roundIt(3.45));
+console.log(roundIt(34.5));
+console.log(roundIt(34.56));
+console.log(roundIt(34.45));
+
+
