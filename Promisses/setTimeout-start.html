@@ -20,12 +20,11 @@
 			(3) Make sure wait returns the Promise too!
 			 */
 			return new Promise(function (resolve, reject) {
+				console.log(this)
 				resolve(window.setTimeout(function () {
+					resolve()
 					console.log('Hello Slavo after 10s')
 				}, ms));
-			}).then(function () {
-				console.log(this)
-				console.log('Hello Slavo')
 			})
 			// window.setTimeout(function() {}, ms);
 		};

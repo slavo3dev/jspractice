@@ -1,14 +1,10 @@
-const greet = new Promise(function (resolve, reject) {
-    var greeting = function greeting() {
-        return "Hi, Slavo - first promisse"
-    }
-    resolve(greeting());
+let greet = new Promise(function (resolve, reject) {
 
-}).then(function (greeting) {
-    return greeting();
-}).catch(function () {
-    return 'Deal'
-});
+    resolve("Hello Slavo Finnaly");
 
-console.log(typeof (greet));
+}).then(function () {
+    return console.log('I am going first');
+})
+
+// console.log(typeof (greet));
 console.log(greet);
