@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<title>Promisify setTimeout</title>
 </head>
+
 <body>
 	<h1>Did the promise finish?</h1>
 	<div class="completion">Not yet</div>
@@ -17,16 +19,23 @@
 			(2) console.log(this) inside the Promise and observe the results.
 			(3) Make sure wait returns the Promise too!
 			 */
-			window.setTimeout(function() {}, ms);
+			return new Promise(function (resolve, reject) {
+				resolve(window.setTimeout(function () {
+					console.log('Hello Slavo after 10s')
+				}, ms));
+			}).then(function () {
+				console.log(this)
+				console.log('Hello Slavo')
+			})
+			// window.setTimeout(function() {}, ms);
 		};
 
 		/*
 		Uncomment these lines when you want to test!
 		You'll know you've done it right when the message on the page changes.
 		 */
-		// var milliseconds = 2000;
-		// wait(milliseconds).then(finish);
-
+		var milliseconds = 10000;
+		wait(milliseconds).then(finish);
 
 		// This is just here to help you test.
 		function finish() {
@@ -35,4 +44,5 @@
 		};
 	</script>
 </body>
+
 </html>
