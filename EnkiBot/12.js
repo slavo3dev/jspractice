@@ -23,9 +23,15 @@ Get the data using the mocked fetch(url) function, which implements the basics o
 //     // use mocked `fetch(url)`
 //   }
 
-fetch('http://great.jokes/christmas').then(function (response) {
-    let res = response
-    console.log(res);
-}).catch(function (err) {
-    console.log(err)
-});
+async function showAvatar() {
+
+    // read our JSON
+    let response = await fetch('http://great.jokes/christmas');
+    let result = await response.json();
+
+
+
+    return result;
+}
+
+console.log(showAvatar());
