@@ -22,6 +22,7 @@ Get the data using the mocked fetch(url) function, which implements the basics o
 // function sayJoke(apiUrl, jokeId){
 //     // use mocked `fetch(url)`
 //   }
+const fetch = require('node-fetch')
 
 async function showAvatar() {
 
