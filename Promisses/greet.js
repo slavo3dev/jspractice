@@ -10,8 +10,6 @@ let test = new Promise(function (resolve, reject) {
     // resolve('Hello Slavo');
 })
 
-
-
 // console.log(test);
 
 test.then(function () {
