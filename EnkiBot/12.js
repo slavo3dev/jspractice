@@ -17,8 +17,15 @@ Throw error in a promise style
 Info
 Get the data using the mocked fetch(url) function, which implements the basics of the fetch api. Learn about fetch. Learn about async/await.
 
-
-
-
-
 */
+
+// function sayJoke(apiUrl, jokeId){
+//     // use mocked `fetch(url)`
+//   }
+
+fetch('http://great.jokes/christmas').then(function (response) {
+    let res = response
+    console.log(res);
+}).catch(function (err) {
+    console.log(err)
+});
