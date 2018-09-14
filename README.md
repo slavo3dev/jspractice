@@ -29,3 +29,6 @@ Training JS #19: Methods of String object--toUpperCase() toLowerCase() and repla
 
 ### Training JS #32: methods of Math---round() ceil() and floor()
 ![screen shot 2018-09-10 at 5 31 40 pm](https://user-images.githubusercontent.com/18499909/45325737-c051cc80-b51f-11e8-8338-29b54383a27d.png)
+
+### Async
+![screen shot 2018-09-13 at 10 44 42 pm](https://user-images.githubusercontent.com/18499909/45526841-de7d2e00-b7a6-11e8-8a06-f1f0ccda06b6.png)
