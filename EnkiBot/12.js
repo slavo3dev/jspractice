@@ -22,17 +22,24 @@ Get the data using the mocked fetch(url) function, which implements the basics o
 // function sayJoke(apiUrl, jokeId){
 //     // use mocked `fetch(url)`
 //   }
-const fetch = require('node-fetch')
-
-async function showAvatar() {
-
-    // read our JSON
-    let response = await fetch('http://great.jokes/christmas');
-    let result = await response.json();
-
-
-
-    return result;
-}
-
-console.log(showAvatar());
+async function sayJoke(apiUrl, jokeId) {    
+    const response = await fetch(apiUrl)
+    const jsonResponse = await response.json()
+    
+    if (!jsonResponse.hasOwnProperty('jokes')) {
+      throw new Error(`No jokes at url: ${apiUrl}`)
+    }
+    
+    const joke = jsonResponse.jokes.find(function(joke) {
+      return joke.id === jokeId
+    })
+    
+    if (!joke) {
+      throw new Error(`No jokes found id: ${jokeId}`)
+    }
+    
+    return {
+      saySetup: () => joke.setup,
+      sayPunchLine: () => joke.punchLine,
+    }
+  }
