@@ -27,5 +27,5 @@ So while your team is discussing purchase of these magnificent auto-piloting bus
 */
 
 function Bus() {
-    //your code goes here
+    
 }
