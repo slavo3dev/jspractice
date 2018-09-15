@@ -20,3 +20,8 @@ let teacher = {
 }
 
 let message = `${student.name} please see ${teacher.name} in ${teacher.room} to pick up your report card.`;
+
+const myName = 'Slavo';
+const greeting = `Hello, my name is  + ${myName}`;
+console.log(greeting);
+console.log(message);
