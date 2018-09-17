@@ -26,7 +26,8 @@ So while your team is discussing purchase of these magnificent auto-piloting bus
 
 */
 
-function Bus(name) {
+function Bus() {
+    constructor(name)
     let name = name;
 }
 
