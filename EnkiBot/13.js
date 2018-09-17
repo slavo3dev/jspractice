@@ -26,6 +26,10 @@ So while your team is discussing purchase of these magnificent auto-piloting bus
 
 */
 
-function Bus() {
-    
+function Bus(name) {
+    let name = name;
 }
+
+let newBus = new Bus('Slavo');
+
+console.log(newBus)
