@@ -27,10 +27,11 @@ So while your team is discussing purchase of these magnificent auto-piloting bus
 */
 
 function Bus() {
-    constructor(name)
+    constructor(name, lastName)
     let name = name;
+    let lastName = lastName;
 }
 
-let newBus = new Bus('Slavo');
+let newBus = new Bus('Slavo', 'Popovic');
 
 console.log(newBus)
