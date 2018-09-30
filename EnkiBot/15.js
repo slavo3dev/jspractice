@@ -9,3 +9,4 @@ for (x in a){
 for (i of a){
     console.log(i)
 }
+
