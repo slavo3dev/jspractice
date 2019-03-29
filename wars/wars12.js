@@ -3,8 +3,10 @@
  */
 
 
-const toUnderscore = (string)  => {
-    // TODO: complete 
+const toUnderscore = (str)  => {
+
+    
+    return str
   }
 
 
